@@ -1,0 +1,3 @@
+vault:
+  azure_key_vault:
+    vault_name: ${parameters.azure.key_vault_name}
