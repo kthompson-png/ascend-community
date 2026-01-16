@@ -1,24 +1,11 @@
-#connection:
-#  snowflake:
-#    account: ${parameters.snowflake.account}
-#    user: ${parameters.snowflake.user}
-#    private_key: ${vaults.environment.SNOWFLAKE_PRIVATE_KEY}
-#    role: ${parameters.snowflake.role}
-#    warehouse: ${parameters.snowflake.warehouse}
-#    database: ${parameters.snowflake.database}
-#    schema: ${parameters.snowflake.schema}
-#    max_concurrent_queries: ${parameters.snowflake.max_concurrent_queries}
-#    create_schema_if_not_exists: true
-
 connection:
-  # For all Snowflake connection options:
-  # https://docs.ascend.io/reference/resource/connection/connection-snowflake#snowflakeconnectionoptions
   snowflake:
-    account: ${parameters.snowflake_account}
-    database: ${parameters.snowflake_database}
-    schema: ${parameters.snowflake_schema}
-    user: ${parameters.snowflake_user}
+    account: ${parameters.snowflake.account}
+    user: ${parameters.snowflake.user}
     private_key: ${vaults.azure_keyvault_investments.SNFLK-SNDBX-PROD-ASCNDLRN-SCRT}
-    role: ${parameters.snowflake_role}
-    warehouse: ${parameters.snowflake_warehouse}
-    create_schema_if_not_exists: True
+    role: ${parameters.snowflake.role}
+    warehouse: ${parameters.snowflake.warehouse}
+    database: ${parameters.snowflake.database}
+    schema: ${parameters.snowflake.schema}
+    max_concurrent_queries: ${parameters.snowflake.max_concurrent_queries}
+    create_schema_if_not_exists: true
