@@ -1,3 +1,4 @@
 vault:
+  name: azure_keyvault_investments
   azure_key_vault:
-    vault_name: ${parameters.azure.key_vault_name}
+    vault_name: inv-pera-keyvault
