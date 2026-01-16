@@ -3,6 +3,7 @@ connection:
     account: ${parameters.snowflake.account}
     user: ${parameters.snowflake.user}
     private_key: ${vaults.environment.SNOWFLAKE_PRIVATE_KEY}
+    private_key: ${vaults.azure_keyvault_investments.SNFLK-SNDBX-PROD-ASCNDLRN-SCRT}
     role: ${parameters.snowflake.role}
     warehouse: ${parameters.snowflake.warehouse}
     database: ${parameters.snowflake.database}
