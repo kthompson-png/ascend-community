@@ -3,6 +3,8 @@ project:
   pip_packages:
   - ottos-expeditions
   parameters:
+    azure:
+      key_vault_name: YOUR_AZURE_KEY_VAULT_NAME
     snowflake:
       account: copera-sandbox
       user: ASCEND_SERVICE_LEARNING
