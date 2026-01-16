@@ -4,12 +4,12 @@ project:
   - ottos-expeditions
   parameters:
     snowflake:
-      account: YOUR_ACCOUNT
-      user: YOUR_USER
-      role: YOUR_ROLE
-      warehouse: YOUR_WAREHOUSE
-      database: YOUR_DATABASE
-      schema: DEFAULT
+      account: copera-sandbox
+      user: ASCEND_SERVICE_LEARNING
+      role: SYSADMIN_ASCEND_LEARNING
+      warehouse: ASCEND_DEV_WH
+      database: ASCEND_GEN3_POC
+      schema: quickstart
       max_concurrent_queries: 20
   defaults:
   - kind: Flow
