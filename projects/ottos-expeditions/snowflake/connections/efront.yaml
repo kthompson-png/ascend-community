@@ -1,0 +1,8 @@
+connection:
+  mssql:  # or postgres, mssql, oracle
+    host: SQLINVDEVDB  # Internal IP/hostname
+    port: 330652608
+    database: efront
+    user: ascefront
+    password: ${vaults.azure_keyvault_investments.ONPREM-ASCND-DEV-EFRONT-SCRT}
+  ssh_tunnel: bastion  # References ssh_tunnels/bastion.yaml
