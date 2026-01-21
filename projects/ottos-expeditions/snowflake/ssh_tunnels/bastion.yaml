@@ -3,6 +3,9 @@ ssh_tunnel:
   port: 22
   user: ascend
   private_key: ${vaults.intance.bastion_private_key}
-  #private_key: ${vaults.vault_name.bastion_private_key}
-  # OR use password:
-  # password: ${vaults.vault_name.bastion_password}
+connection:
+  ssh_tunnel:
+    host: dataconn.copera.org
+    port: 22
+    user: ascend
+    private_key: ${vaults.intance.bastion_private_key}
