@@ -2,4 +2,4 @@ ssh_tunnel:
   host: dataconn.copera.org
   port: 22
   user: ascend
-  private_key: ${vaults.environment.BASTION_PRIVATE_KEY}
+  private_key: ${vaults.envirobnment.bastion_private_key}
