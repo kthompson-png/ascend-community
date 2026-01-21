@@ -8,4 +8,4 @@ connection:
     host: dataconn.copera.org
     port: 22
     user: ascend
-    private_key: ${vaults.intance.bastion_private_key}
+    private_key: ${vaults.instance.bastion_private_key}
