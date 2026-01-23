@@ -1,0 +1,11 @@
+component:
+  description: |
+    Reads FX_RATES_ORIG data from PACE SECURITY database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.FX_RATES_ORIG source component.
+  read:
+    connection: pace_security_ro
+    mssql:
+      table:
+        name: fx_rates_orig
+        schema: dbo
+    strategy: full

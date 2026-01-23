@@ -3,3 +3,7 @@ profile:
     snowflake:
       $<: $parameters.snowflake
       schema: WORKSPACE_YOUR_NAME
+    snowflakemain:
+        user: 0OAWBGQR0C1ZZMHXW1T7
+        role: ASCEND_INVESTMENTS_DEV_FR
+        warehouse: ELT_WH_TEST

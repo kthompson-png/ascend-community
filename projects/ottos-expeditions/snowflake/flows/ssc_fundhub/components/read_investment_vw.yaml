@@ -1,0 +1,9 @@
+component:
+  description: Read INVESTMENT_VW view from Snowflake
+  read:
+    connection: snowflake_main_dev
+    snowflake:
+      table:
+        name: INVESTMENT_VW
+        schema: ${parameters.snowflakemain.schema}
+    strategy: full

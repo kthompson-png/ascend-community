@@ -1,0 +1,11 @@
+component:
+  description: |
+    Reads EQUITY data from PACE SECURITY database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.EQUITY source component.
+  read:
+    connection: pace_security_ro
+    mssql:
+      table:
+        name: equity
+        schema: dbo
+    strategy: full

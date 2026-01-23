@@ -32,3 +32,10 @@ mcpServers:
       PAGERDUTY_USER_API_KEY: ${vaults.environment.PAGERDUTY_SECRET}
       UV_CACHE_DIR: /tmp/uv-cache/
       UV_TOOL_DIR: /tmp/uv-tools/
+
+  gen2:
+      command: ascend-gen2-mcp
+      env:
+        ASCEND_GEN2_HOSTNAME: ${vaults.azure_keyvault_investments.ASCND-INVSTDVRW-SRVC-ENDPNT}
+        ASCEND_GEN2_ACCESS_KEY: ${vaults.azure_keyvault_investments.ASCND-INVSTDVRW-SRVC-ID}
+        ASCEND_GEN2_SECRET_KEY: ${vaults.azure_keyvault_investments.ASCND-INVSTDVRW-SRVC-SCRT}

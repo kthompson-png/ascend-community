@@ -2,7 +2,8 @@ otto:
   agents:
     chat:
       max_turns: 128
-      mcp_servers: []
+      mcp_servers: 
+        - gen2
         # - github
         # - pagerduty
         # - slack

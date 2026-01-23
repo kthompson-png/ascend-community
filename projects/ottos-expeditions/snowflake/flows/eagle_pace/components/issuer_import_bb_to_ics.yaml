@@ -1,0 +1,14 @@
+component:
+  description: |
+    Q3 24 BB Credit Risk
+    Reads ISSUER_IMPORT_BB_TO_ICS data from PACE PERA MASTER database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.ISSUER_IMPORT_BB_TO_ICS source component.
+    Note: This component was paused in Gen2.
+  read:
+    connection: pace_pera_master
+    mssql:
+      table:
+        name: issuer_import_bb_to_ics
+        schema: dbo
+    strategy: full
+  skip: true

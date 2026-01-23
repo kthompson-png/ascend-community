@@ -1,0 +1,14 @@
+component:
+  description: |
+    Q4 24 BB Credit Risk Catchup
+    Reads ISSUER_IMPORT_BB_TO_ICS_CATCHUP data from PACE PERA MASTER database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.ISSUER_IMPORT_BB_TO_ICS_CATCHUP source component.
+    Note: This component was paused in Gen2.
+  read:
+    connection: pace_pera_master
+    mssql:
+      table:
+        name: issuer_import_bb_to_ics_catchup
+        schema: dbo
+    strategy: full
+  skip: true

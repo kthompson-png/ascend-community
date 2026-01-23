@@ -1,0 +1,9 @@
+component:
+  description: Read CBOR_ACCOUNT view from Snowflake MAIN
+  read:
+    connection: snowflake_main_tnt_dws_prod
+    snowflake:
+      table:
+        name: CBOR_ACCOUNT
+        schema: SHARED
+    strategy: full

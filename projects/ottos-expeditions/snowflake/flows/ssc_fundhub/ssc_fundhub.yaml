@@ -1,0 +1,4 @@
+flow:
+  description: SSC FundHub data flow
+  data_plane:
+    connection_name: data_plane_snowflake

@@ -1,0 +1,8 @@
+component:
+  read:
+    connection: pace_pera_master
+    mssql:
+      table:
+        name: kyriba_position_data_history
+        schema: dbo
+    strategy: full

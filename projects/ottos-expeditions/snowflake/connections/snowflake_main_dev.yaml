@@ -1,0 +1,11 @@
+connection:
+  snowflake:
+    account: ${parameters.snowflakemain.account}
+    user: ${parameters.snowflakemain.user}
+    password: ${vaults.azure_keyvault_investments.SNFLK-MAIN-DVQA-ASCND-PSSWRD}
+    role: ${parameters.snowflakemain.role}
+    warehouse: ${parameters.snowflakemain.warehouse}
+    database: ${parameters.snowflakemain.database}
+    schema: ${parameters.snowflakemain.schema}
+    max_concurrent_queries: ${parameters.snowflakemain.max_concurrent_queries}
+    create_schema_if_not_exists: true

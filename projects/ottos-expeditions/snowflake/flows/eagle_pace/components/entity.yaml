@@ -1,0 +1,11 @@
+component:
+  description: |
+    Reads ENTITY data from PACE RULES database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.ENTITY source component.
+  read:
+    connection: pace_rules_ro
+    mssql:
+      table:
+        name: entity
+        schema: dbo
+    strategy: full

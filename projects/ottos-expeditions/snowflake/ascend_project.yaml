@@ -13,6 +13,11 @@ project:
       database: ASCEND_GEN3_POC
       schema: quickstart
       max_concurrent_queries: 20
+    snowflakemain:
+      account: copera-main
+      database: INVESTMENTS_INBOUND_COPERA_SSC_FUNDHUB_QA
+      schema: INVESTMENTS_FUNDHUB
+      max_concurrent_queries: 20
   defaults:
   - kind: Flow
     name:

@@ -1,0 +1,11 @@
+component:
+  description: |
+    Reads APP_SETTINGS data from PACE PERA MASTER database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.APP_SETTINGS source component.
+  read:
+    connection: pace_pera_master
+    mssql:
+      table:
+        name: app_settings
+        schema: dbo
+    strategy: full

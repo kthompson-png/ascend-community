@@ -1,0 +1,13 @@
+connection:
+  description: |
+    Read-only connection to PACE SECURITY database.
+    Migrated from Gen2 PACE_SECURITY_RO connection.
+  mssql:
+    host: PACEDEVDB
+    port: 49576
+    database: SECURITY
+    user: ascpace
+    password: ${vaults.azure_keyvault_investments.ONPREM-ASCND-DEV-PACE-SCRT}
+    driver: ODBC Driver 18 for SQL Server
+    trust_server_certificate: true
+  ssh_tunnel: bastion

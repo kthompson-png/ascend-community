@@ -1,0 +1,11 @@
+component:
+  description: |
+    Reads SECURITY_MASTER_DETAIL data from PACE SECURITY database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.SECURITY_MASTER_DETAIL source component.
+  read:
+    connection: pace_security_ro
+    mssql:
+      table:
+        name: security_master_detail
+        schema: dbo
+    strategy: full

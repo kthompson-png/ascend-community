@@ -1,0 +1,4 @@
+flow:
+  description: TNT DWS Source
+  data_plane:
+    connection_name: data_plane_snowflake  #where data is written to (see component for source)

@@ -1,0 +1,5 @@
+flow:
+  description: |-
+    Connection into PACE DB.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE dataflow.
+  data_plane: {}

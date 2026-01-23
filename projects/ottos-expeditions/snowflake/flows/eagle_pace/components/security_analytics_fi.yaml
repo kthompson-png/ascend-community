@@ -1,0 +1,11 @@
+component:
+  description: |
+    Reads SECURITY_ANALYTICS_FI data from PACE SECURITY database.
+    Migrated from Gen2 INVESTMENTS_DEV_RAW.EAGLE_PACE.SECURITY_ANALYTICS_FI source component.
+  read:
+    connection: pace_security_ro
+    mssql:
+      table:
+        name: security_analytics_fi
+        schema: dbo
+    strategy: full
